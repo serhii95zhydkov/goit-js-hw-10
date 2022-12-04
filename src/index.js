@@ -47,8 +47,8 @@ function getCountryName(name) {
 function renderCountryList(countries) {
   const markup = countries.map(country => {
       return `<li class="country-item">
-      <img src="${country.flags.svg}" width="40" alt="flag">
-      <p class="country-name">${country.name.official}</p>
+      <img src="${country.flags.svg}" width="30" alt="flag">
+      <p><b>${country.name.official}</b></p>
       </li>`;
     })
     .join("");
